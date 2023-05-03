@@ -50,28 +50,23 @@ public class JenniferVisuals extends VScene {
         if (elapsed > v.toMs(1, 3,0) && elapsed < v.toMs(1, 14, 0)) 
         {
             wf.render();
-            speaker.render();
-              
+            speaker.render();              
         }
         else if (elapsed > v.toMs(1, 14,0) && elapsed < v.toMs(1, 25, 0)) 
         {
-         
-            hex.render();
             gv.render(elapsed);
-
+            hex.render();
+           
         }
         else if (elapsed > v.toMs(1, 25,0) && elapsed < v.toMs(1, 37, 0)) 
         {
             dots.render(elapsed);  
             clock.render(elapsed);
-
-
         }
         else if (elapsed > v.toMs(1, 37,0) && elapsed < v.toMs(1, 48, 0)) 
         {
             gv.render(elapsed);
             stars.render(elapsed);
-
         }
         System.out.println(elapsed);
     }
