@@ -285,7 +285,15 @@ The JenniferVisuals class also contains some additional fields and variables for
 
 ### Altahier's Visuals - `AJVisual.java`
 
-...
+The AjVisual program is a class that extends the VScene class, which is a class that is used to create visual scenes in the Processing programming environment. Within the AjVisual class, there is a constructor that initializes various variables, such as the audio buffer, which is used to process the music.
+
+The program creates two different visuals that react to the music. The first visual is a rainbow spiral, which is drawn using the beginShape() method. The spiral has a size, spacing and speed that can be adjusted to create different visual effects. The amplitude of the music is mapped to the size of the spiral, which means that the size of the spiral changes dynamically based on the loudness of the music.
+
+The second visual is an expanding circle, which is drawn using the ellipse() method. The size of the circle is also mapped to the amplitude of the music, which means that the size of the circle changes dynamically based on the loudness of the music.
+
+The program also sets the background of the scene to black using the background() method, which creates a contrast that allows the rainbow spiral and the expanding circle to stand out.
+
+In addition to creating the visuals, the program also imports various libraries and sets up an audio buffer to process the music. The audio buffer is used to analyze the music and extract information such as the amplitude and frequency of the sound.
 
 | Class/Asset | Source |
 | --- | --- |
@@ -324,4 +332,4 @@ I am most proud of the 3D rotating cube of stars that I made for this assignment
 
 ### Altahier Saleh
 
-...
+i am most proud of the by the rainbow spiral in the AjVisual code. Working on the spiral visual in the AjVisual code helped me gain a deeper understanding of how to map audio amplitude to visual parameters and create complex, music-reactive graphics in Processing. i could have done better but for the most part i was happy with the way it turned out.
